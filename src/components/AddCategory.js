@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-;
 
 
 export const AddCategory = ({setCategorias}) => {
@@ -23,12 +22,13 @@ export const AddCategory = ({setCategorias}) => {
         }
     };
 
-    return <form onSubmit={ handleSubmit }>
+    return (<form onSubmit={ handleSubmit }>
+                <p>{ inputValue }</p>
                 <input 
                     type="text"
                     value={ inputValue }
                     onChange={ handleInputChange }/>
-            </form>
+            </form>);
 
 };
 
